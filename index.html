@@ -1,17 +1,32 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-<title>Calcul IMC</title>
+   <meta charset="utf-8">
+   <title>Calcul IMC</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h2>Calcul de l'IMC</h2>
-<form method="post" action="testaClasse.php"> 
-   Taille : <input type="text" name="Taille">
-   <br><br>
-   Poids: <input type="text" id="Poids" name="Poids">
-   <br><br>
-   <input type="submit" name="submit" value="Calculer"> 
-</form>
 
+   <div class="container light-red">
+   <center>
+   <h2>Calcul de l'IMC</h2>
+   </center>
+
+
+   <form method="post" class="form-inline" action="testaClasse.php">
+      <div class="form-group">
+      <label for="taille">Taille</label>
+      <input type="text" class="form-control" id="Taille" name="Taille" placeholder="Taille en mètre">
+      </div>
+      <div class="form-group">
+      <label for="poids">Poids</label>
+      <input type="text" class="form-control" id="Poids" name="Poids" placeholder="Poids en Kg">
+      </div>
+      <button type="submit" class="btn btn-default">Calculer</button>
+   </form>
+
+   </div>
 </body>
 </html>
